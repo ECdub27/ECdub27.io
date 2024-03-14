@@ -4,7 +4,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ecdub27.github.io/ECdub27.io/",
+  "homepage": "https://ecdub27.github.io/ECdub27.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
