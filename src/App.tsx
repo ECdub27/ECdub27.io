@@ -10,10 +10,12 @@ import Footer from './Components/Footer/Footer';
 import TechnologySection from './Components/Technology/techSection';
 import PoliticsSection from './Components/Politics/politicsSection';
 import React from 'react';
+import BasicTimeline1 from './Components/testComponent';
 // NavBar HeroSlide NewsArticle TechnologySection PoliticsSection
 // see if you can get business sources to the right sidebar 
 export type AppProps = {
   message: string;
+  image: string | undefined;
   count: number;
   disabled: boolean;
   names: string[];
@@ -110,28 +112,33 @@ const App: React.FC = () => {
   <main>
     <article id='headlines'>
      <HeroSlide />
+     <BasicTimeline1 key={''} message={''} count={0} disabled={false} names={[]} status={'waiting'} description={''} title={''} name={''} position={''} urlToImage={''} rowHeight={0} flexItems={0} href={''} onClick={function (): void {
+                throw new Error('Function not implemented.');
+              } } setState={function (): void {
+                throw new Error('Function not implemented.');
+              } } image={undefined} />
     </article>
     <aside id='business'>
       <NewsArticle key={''} message={''} count={0} disabled={false} names={[]} status={'waiting'} description={''} title={''} name={''} position={''} urlToImage={''} rowHeight={0} flexItems={0} href={''} onClick={function (): void {
                 throw new Error('Function not implemented.');
               } } setState={function (): void {
                 throw new Error('Function not implemented.');
-              } }  />
+              } } image={undefined}  />
               <div id='polly'>
-       <PoliticsSection key={''} message={''} count={0} disabled={false} names={[]} status={'waiting'} description={''} title={''} name={''}  position={''} urlToImage={''} rowHeight={0} flexItems={0} href={''} onClick={function (): void {
-                throw new Error('Function not implemented.');
-              } } setState={function (): void {
-                throw new Error('Function not implemented.');
-              } } />
+       <PoliticsSection key={''} message={''} count={0} disabled={false} names={[]} status={'waiting'} description={''} title={''} name={''} position={''} urlToImage={''} rowHeight={0} flexItems={0} href={''} onClick={function (): void {
+                  throw new Error('Function not implemented.');
+                } } setState={function (): void {
+                  throw new Error('Function not implemented.');
+                } } image={undefined} />
               </div>
     </aside>
   </main>
   <section id='tech'>
-    <TechnologySection key={''} message={''} count={0} disabled={false} names={[]} status={'waiting'} description={''} title={''} name={''}  position={''} urlToImage={''} rowHeight={0} flexItems={0} href={''} onClick={function (): void {
+    <TechnologySection key={''} message={''} count={0} disabled={false} names={[]} status={'waiting'} description={''} title={''} name={''} position={''} urlToImage={''} rowHeight={0} flexItems={0} href={''} onClick={function (): void {
               throw new Error('Function not implemented.');
             } } setState={function (): void {
               throw new Error('Function not implemented.');
-            } } />
+            } } image={undefined} />
     </section>
   <footer>
     <Footer description={''} title={''} />
