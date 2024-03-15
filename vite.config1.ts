@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/ECdub27.io/'
+  base: 'https://ecdub27.github.io/ECdub27.io/'
 })
