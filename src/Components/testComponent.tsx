@@ -43,7 +43,7 @@ const BasicTimeline1: React.FC<AppProps> = () => {
                                 <p>{article.name}</p>
                                 <p>{article.description}</p>
                                 <a rel='noreferrer' href={article.url} target='_blank'>{article.url}</a>
-                                <img src={article.image} alt='news article flick' /> // Add the 'image' property to the 'ApiProps' type
+                                <img src={article.image} alt='news article flick' /> 
                             </li>
                         </Typography>
                     </TimelineContent>
