@@ -35,3 +35,5 @@ a take on a new looking news app that doesn't feel so boring
 ### Limitations ###
 For project and price concerns , APIS being used are in "dev" usage status and meant to be used in a local dev environment. 
 If for some reason any user cannot view the data, please reach via email or DM.  
+At the time I was able to use the API, to workaround this I figured I would create my own backend server and try through there by proxy. I have been working on other things, 
+so I will come back to this. 
