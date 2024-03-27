@@ -26,7 +26,9 @@ return (
         <div>
         <h2>Technology</h2>
         {error ? (
-               <>Oh no, there was an error</>
+               <> <p>Sorry for the error we are woking on this in development please see our friends at </p>
+               <a href='https://techcrunch.com'>TechCrunch</a></>
+               
              ) : isLoading ? (
                <>Loading... <LinearBuffer /> </>
              ) : data ? (
@@ -55,6 +57,8 @@ return (
                </ImageList>
                </>
              ) : null}
+
+            
         </div>
            
    

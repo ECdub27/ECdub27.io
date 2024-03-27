@@ -27,7 +27,7 @@ return (
         
         
          {error ? (
-        <>Oh no, there was an error</>
+        <>Please see our friends at  <a href="https://apnews.com">Associated Press</a></>
       ) : isLoading ? (
         <>Loading... <LinearBuffer /> </>
       ) : data ? (

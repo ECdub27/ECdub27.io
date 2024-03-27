@@ -10,25 +10,26 @@ import {createApi , fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 
 export const apiSlice = createApi({
     reducerPath: 'Api',
-    baseQuery: fetchBaseQuery({ baseUrl: 'https://'}),
+    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4000',timeout:5000}),
+    
     endpoints: (builder) => ({
         getPokemonByName: builder.query({
             query: (name:string) => `pokeapi.co/api/v2/pokemon/${name}`
         }),
         GetBusinessArticles: builder.query({
-            query: () => 'newsapi.org/v2/top-headlines/sources?category=business&apiKey=78df58fec805459caf086c63cbe2b3a9'
+            query: () => '/api/GetBusinessArticles',
         }),
         GetAllArticles: builder.query({
-            query: () => 'newsapi.org/v2/top-headlines?country=us&apiKey=78df58fec805459caf086c63cbe2b3a9'
+            query: () => '/api/GetAllArticles'
         }),
         GetPoliticsArticles: builder.query({
-            query: () => 'newsapi.org/v2/top-headlines?q=politics&pageSize=20&apiKey=78df58fec805459caf086c63cbe2b3a9'
+            query: () => '/api/GetPoliticsArticles'
         }),
         GetTechnologyArticles: builder.query({
-            query: () => 'newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&pageSize=20&apiKey=78df58fec805459caf086c63cbe2b3a9'
+            query: () => '/api/GetTechnologyArticles'
         }),
         getArticlesById: builder.query({
-            query:() => 'newsapi.org/v2/everything?domains=google.com,nytimes.com&apiKey=78df58fec805459caf086c63cbe2b3a9'
+            query:() => '/api/getArticlesById'
         }),
         })
     })

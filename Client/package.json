@@ -7,6 +7,7 @@
   "version": "0.0.0",
   
   "type": "module",
+  "proxy": "http://localhost:4000",
   
   "homepage": "https://ecdub27.github.io/ECdub27.io/",
   
