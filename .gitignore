@@ -29,3 +29,4 @@ dist-ssr
 node_modules
 protect.env
 .env
+protected.env
