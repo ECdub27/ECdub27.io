@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 res.send('Hello World');
 });
 
-app.get('/api/GetBusinessArticles', cors(), asyncHandler(async(req, res) => { 
+app.get('/api/GetBusinessArticles', cors(), asyncHandler(async(_req, res) => { 
 
   try{
     const response  = await fetch(`https://newsapi.org/v2/top-headlines/sources?category=business&apiKey=${api}`)
@@ -82,7 +82,8 @@ app.get('/api/GetPoliticsArticles', asyncHandler(async (req, res) => {
 
 }));
 
-app.get('/api/GetTechnologyArticles', cors(), asyncHandler(async(req, res) => { 
+app.get('/api/GetTechnologyArticles', cors(), asyncHandler(async(_req, res) => { 
+  
   try{
       const response = await fetch(`https://newsapi.org/v2/everything?domains=techcrunch.com,thenextweb.com&pageSize=20&apiKey=${api}`)
       .then((response) =>{
