@@ -10,7 +10,16 @@ import {createApi , fetchBaseQuery} from '@reduxjs/toolkit/query/react';
 
 export const apiSlice = createApi({
     reducerPath: 'Api',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4000',timeout:5000}),
+    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4000',timeout:5000,
+    mode: 'cors',
+    credentials: "same-origin",
+prepareHeaders:(headers) =>{
+    const accessToken = localStorage.getItem('access_token');
+    if(accessToken){
+        headers.set('authorization', `Bearer ${accessToken}`);
+    }   
+    return headers;
+} }),
     
     endpoints: (builder) => ({
         getPokemonByName: builder.query({
